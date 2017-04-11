@@ -1,0 +1,225 @@
+footer.page-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 0;
+  z-index: 1000;
+}
+.hidden {
+  display: none;
+}
+h1,
+h2,
+h3 {
+  font-size: 30px;
+  color: #ef9a9a;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  color: #37474f;
+  font-weight: 400;
+}
+
+#app-nav a.active {
+  text-decoration: underline;
+}
+
+.left-rail {
+  width: 300px;
+  position: fixed;
+  display: inline-block;
+  height: 100%;
+  background: #eceff1;
+}
+
+.left-rail select {
+  width: 100%;
+  display: block;
+  margin: 15px auto;
+}
+
+.right-rail {
+  width: calc(100% - 300px);
+  display: inline-block;
+  margin-left: 300px;
+}
+
+.right-rail {
+  margin-bottom: 60px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.right-rail button {
+  width: 300px;
+  margin: 30px auto;
+  display: block;
+}
+
+.empty-message {
+  color: #009688;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .right-rail {
+    margin-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*** CSS for filter collection **/
+.filter-collection {
+  padding: 20px;
+}
+
+.filter-collection label {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #1e88e5;
+  font-weight: bold;
+}
+.filter-collection h3 {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 18px;
+  color: #ff5252;
+}
+.filter-collection button {
+  margin: 10px auto;
+  display: block;
+}
+/*** End filter css **/
+
+/** CSS for college colelction view */
+.collection-heading {
+  position: fixed;
+  width: 100%;
+  max-width: calc(100% - 300px);
+  top: 64px;
+  background: #fff;
+  z-index: 100;
+}
+@media screen and (max-width: 991px) {
+  .collection-heading {
+    width: 100%;
+    max-width: none;
+  }
+}
+.collection-heading .item {
+  padding: 10px;
+  background: #b6b6b6;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.college-collection .item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.college-collection .item img {
+  width: 50px;
+  height: 50px;
+}
+
+.college-collection .item > div,
+.college-collection .item > p {
+  text-align: center;
+  margin: 3px auto !important;
+  color: #424242;
+  line-height: 1.2;
+}
+
+.college-collection .item .name {
+  color: #2196f3;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.college-collection .item .item-ranking {
+  color: #43a047;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.college-collection .item .bar {
+  height: 10px;
+  width: 100%;
+  background: #e0e0e0;
+}
+
+.college-collection .item .bar > div {
+  height: 10px;
+  display: block;
+  background: #69f0ae;
+  width: auto;
+}
+
+.college-collection .item .score-view {
+  display: block;
+  margin: 5px 10px;
+  width: 95%;
+}
+
+.college-collection .item .sat .score {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0091ea;
+}
+
+.college-collection .item .act .score {
+  font-weight: bold;
+  font-size: 18px;
+  color: #00bfa5;
+}
+
+.college-collection .item .percentage_text {
+  color: #2e7d32;
+}
+/** End class for CSS collection view */
+
+/** CSS for loading icon **/
+.loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 15px solid #e57373;
+  border-top-color:rgba(0,0,0,0.3);
+  box-sizing:border-box;
+  margin: 20px auto;
+  animation:loading 1.2s linear infinite;
+  -webkit-animation:loading 1.2s linear infinite;
+}
+@keyframes loading {
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+@-webkit-keyframes loading {
+  0%{-webkit-transform:rotate(0deg)}
+  100%{-webkit-transform:rotate(360deg)}
+}
+
+/** End css for loading icon **/
+
+/** CSS FOR CHART */
+.container .highschool-chart {
+  margin: 20px auto 40px auto;
+  padding: 0 20px;
+}
+
+.container .average_score strong {
+  color: #1e88e5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/** end css for chart */
